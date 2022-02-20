@@ -1,13 +1,13 @@
 <html>
     <head>
         <title>Mikorz Gaming Esports</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico?">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico?">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div class="banner">
             <div class="navbar">
-                <img src="logo.png" class="logo">
+                <img src="images/logo.png" class="logo">
                 <ul>
                     <li><a href="#">Strona Główna</a></li>
                     <li><a href="mailto:mikorzgaming.esports@gmail.com">Kontakt</a></li>
@@ -24,8 +24,86 @@
                     <a href="mailto:mikorzgaming.esports@gmail.com"><button type="button"><span></span>Kontakt</button></a>
                     <a href="http://www.youtube.com/channel/UCdby7HDxAFLvHQKmn4n2Frw?sub_confirmation=1"><button type="button"><span></span>Subskrybuj</button></a>
                 </div>
+                <img src="images/arrows.png"/>
+            </div>
+
+            <div class="row-1">
+                <div class="col-1">
+                    <h2>MikorzPL123</h2>
+                    <h3>Support dla Mikorz Gaming</h3>
+                    <p>#1 Nautilus na EUNE</p>
+                    <img src="images/mikorz.png" height="128" width="128"/>
+                </div>
+            </div>
+
+            <div class="row-2">
+                <div class="col-2">
+                    <h2>MLG Kacper</h2>
+                    <h3>ADC dla Mikorz Gaming</h3>
+                    <p>#4 Vayne na świecie</p>
+                    <img src="images/kacper.png" height="128" width="128"/>
+                </div>
+            </div>
+
+            <div class="row-3">
+                <div class="col-3">
+                    <h2>Feeeeddmmmeee</h2>
+                    <h3>Mid laner dla Mikorz Gaming</h3>
+                    <p>Hardstuck Azir OTP</p>
+                    <img src="images/feedme.png" height="128" width="128"/>
+                </div>
+            </div>
+
+            <div class="row-4">
+                <div class="col-4">
+                    <h2>I bark for Ewa</h2>
+                    <h3>Top laner dla Mikorz Gaming</h3>
+                    <p>Darius abuser</p>
+                    <img src="images/hung.png" height="128" width="128"/>
+                </div>
+            </div>
+
+            <div class="row-5">
+                <div class="col-5">
+                    <h2>zwiadowcy10</h2>
+                    <h3>Jungler dla Mikorz Gaming</h3>
+                    <p>Diana OTP</p>
+                    <img src="images/zwiadowiec.png" height="128" width="128"/>
+                </div>
             </div>
 
         </div>
+        
+        <script>
+            var col1 = document.querySelector(".col-1");
+            var col2 = document.querySelector(".col-2");
+            var col3 = document.querySelector(".col-3");
+            var col4 = document.querySelector(".col-4");
+            var col5 = document.querySelector(".col-5");
+
+            var col1ScrollLimit = innerHeight / 10 
+            var col2ScrollLimit = innerHeight / 3
+            var col3ScrollLimit = innerHeight / 1.5
+            var col4ScrollLimit = innerHeight
+            var col5ScrollLimit = innerHeight / 0.75
+
+            onscroll = () => {
+              if (document.body.scrollTop > col1ScrollLimit) col1.style.left = 1;
+              else col1.style.left = "-100%";
+
+              if (document.body.scrollTop > col2ScrollLimit) col2.style.left = 1;
+              else col2.style.left = "-100%";
+
+              if (document.body.scrollTop > col3ScrollLimit) col3.style.left = 1;
+              else col3.style.left = "-100%";
+
+              if (document.body.scrollTop > col4ScrollLimit) col4.style.left = 1;
+              else col4.style.left = "-100%";
+
+              if (document.body.scrollTop > col5ScrollLimit) col5.style.left = 1;
+              else col5.style.left = "-100%";
+            }
+        </script>
+        
     </body>
 </html>
