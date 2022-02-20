@@ -25,8 +25,8 @@ body{
 .botbar{
     background-color: #fff600;
     overflow: auto;
-    position: absolute;
-    bottom: -1500px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
     text-align: center;
 }
